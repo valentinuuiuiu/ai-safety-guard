@@ -39,4 +39,4 @@ print(result)  # Returns safety score and classification
 - `services/` - Main service classes and API
 - `tests/` - Unit and integration tests
 - `utils/` - Helper functions and utilities
-```
+```# ai-safety-guard
