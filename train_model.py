@@ -1,7 +1,7 @@
 """
 Main training script for the safety classifier
 """
-from ai_safety_guard.models.trainer import SafetyModelTrainer
+from ai_safety_guard.models.advanced_trainer import AdvancedSafetyModelTrainer
 from ai_safety_guard.data.dataset import SafetyDataset
 from ai_safety_guard.utils.data_utils import create_synthetic_dataset
 import torch
@@ -16,8 +16,8 @@ def main():
     texts, labels = zip(*dataset)
     
     # Initialize trainer
-    print("Initializing trainer...")
-    trainer = SafetyModelTrainer()
+    print("Initializing advanced trainer...")
+    trainer = AdvancedSafetyModelTrainer()
     
     # Prepare dataset
     print("Preparing dataset...")
